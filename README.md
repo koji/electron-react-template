@@ -3,7 +3,7 @@ electron-react template with typescript
 
 
 ```zsh
-$ cd 
+$ cd electron-react-template
 
 $ pnpm install
 
