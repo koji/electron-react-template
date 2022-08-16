@@ -1,6 +1,6 @@
 {
   "name": "electron-react",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/main.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "dev": "run-p dev:*",
     "dev:esbuild": "cross-env NODE_ENV=\"development\" ts-node ./esbuild.ts",
     "dev:electron": "wait-on ./dist/index.html ./dist/main.js && cross-env NODE_ENV=\"development\" electron .",
-    "build": "cross-env NODE_ENV=\"production\" ts-node ./esbuild.ts"
+    "build": "cross-env NODE_ENV=\"production\" ts-node ./esbuild.ts",
+    "package": "ts-node ./builder.ts"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,7 @@
   },
   "devDependencies": {
     "@craftamap/esbuild-plugin-html": "^0.4.0",
-    "@types/node": "^18.7.3",
+    "@types/node": "^18.7.5",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.26",
